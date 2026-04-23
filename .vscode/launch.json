@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Mergington WebApp",
-      "type": "debugpy",
+      "type": "python",
       "request": "launch",
       "module": "uvicorn",
       "args": [
@@ -15,7 +15,10 @@
         "--reload-include",
         "src/static/*"
       ],
-      "jinja": true
+      "jinja": true,
+      "console": "integratedTerminal",
+      "subProcess": true,
+      "justMyCode": false
     }
   ]
 }
